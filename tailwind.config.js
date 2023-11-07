@@ -15,6 +15,9 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                gotham: ['gotham', 'sans-serif'],
+                gothamMedium: ['gotham-medium', 'sans-serif'],
+                gothamBold: ['gotham-bold', 'sans-serif'],
             },
         },
     },

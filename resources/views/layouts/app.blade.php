@@ -15,7 +15,9 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
+        <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
         @livewireStyles
+
     </head>
     <body class="font-sans antialiased">
         <x-banner />

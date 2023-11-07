@@ -15,13 +15,13 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
+        <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
         @livewireStyles
     </head>
     <body>
-        <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
-        </div>
-
-        @livewireScripts
+            <div class="loginImage font-gotham text-gray-900 antialiased">
+                {{ $slot }}
+            </div>
+            @livewireScripts
     </body>
 </html>

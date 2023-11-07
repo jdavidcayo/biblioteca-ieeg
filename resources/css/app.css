@@ -5,3 +5,12 @@
 [x-cloak] {
     display: none;
 }
+body.loginImage {
+    width: 100%;
+    height: 100vh;
+    background-color: red !important;
+    /* background-image: url('../img/Fondo-LogingContraseña.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
