@@ -20,6 +20,17 @@ export default {
                 gothamBold: ['gotham-bold', 'sans-serif'],
             },
         },
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            'blanco': '#f5f5f5',
+            'morado': '#5d1250',
+            'crema': '#f3d2d7',
+            'fucsia': '#b3345b',
+            'gris': '#626262',
+            'rosado': '#ce7386',
+            'verde': '#3f747e',
+          },
     },
 
     plugins: [forms, typography],
