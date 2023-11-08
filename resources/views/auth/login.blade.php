@@ -15,22 +15,18 @@
         <form method="POST" action="{{ route('login') }}" class="m-4 p-4">
             @csrf
 
-            <div class="inputContainer">
-                <span>
-                    <img src="{{ asset('assets/img/Usuarui.png') }}" alt="Logo usuario" class="inputImg" />
-                </span>
+            <div class="flex flex-row items-center text-center rounded-full overflow-hidden border mb-2">
+                <img src="{{ asset('assets/img/Usuarui.png') }}" alt="Logo usuario" class="inputImg ml-3 mr-2 h-8 " />
                 
-                <x-input id="email" class="px-4 py-2 rounded-r-lg w-full" type="email" name="email" :value="old('email')" placeholder="Usuario" required autofocus autocomplete="username" />
+                <x-input id="email" type="email" name="email" :value="old('email')" placeholder="Usuario" required autofocus autocomplete="username" class="w-full h-full ml-3"/>
             </div>              
 
-            <div class="mt-4 flex justify-center align-middle">
-                <figure>
-                    <img src="{{ asset('assets/img/Candado.png') }}" alt="Contraseña" width="25px">
-                </figure>
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" placeholder="Contraseña" />
+            <div class="flex flex-row items-center text-center rounded-full overflow-hidden border mt-2">
+                <img src="{{ asset('assets/img/Candado.png') }}" alt="Contraseña" class="inputImg ml-3 h-8 ">
+                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" placeholder="Contraseña" class="w-full h-full ml-3"/>
             </div>
 
-            <div class="flex flex-col items-center justify-end mt-4">
+            <div class="flex flex-col mt-4 items-end ">
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
