@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\FolletosContoller;
+use App\Http\Controllers\ManualesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InicioController;
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 
 
@@ -22,3 +24,6 @@ Route::middleware([
         return view('welcome');
     })->name('indexVerified');
 });
+Route::get('Inicio', [InicioController::class, 'inicio']);
+Route::get('Manuales', [ManualesController::class,'manuales']);
+Route::get('Folletos', [FolletosContoller::class,'folletos']);
