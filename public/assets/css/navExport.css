@@ -25,6 +25,11 @@
 }
 .img__inicio{
     width: 120px;
+<<<<<<< HEAD
+=======
+    height: 100px;
+    margin: 30px;
+>>>>>>> 44ca779b9a4960b3592783b1448c99e1deca838b
 }
 h1{
     color: #f3d2d7;
@@ -79,12 +84,17 @@ h5 span{
     margin: 2px 0 0 0;
 }
 /* Estilos para las secciones */
+<<<<<<< HEAD
 /* .secciones {
+=======
+.secciones {
+>>>>>>> 44ca779b9a4960b3592783b1448c99e1deca838b
     display: flex;
     flex-direction: row;
     background: #5d1250;
     justify-content: center;
     padding: 10px 0 40px 0;
+<<<<<<< HEAD
 } */
 
 /* .secciones ul {
@@ -99,6 +109,22 @@ h5 span{
     list-style: none;
     color:#f3d2d7;
 } */
+=======
+}
+
+.secciones ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.nav li {
+    font-family: 'gotham';
+    list-style: none;
+    color:#f3d2d7;
+}
+>>>>>>> 44ca779b9a4960b3592783b1448c99e1deca838b
 /*Footer*/
 .contacto__footer{
     text-align: center;
