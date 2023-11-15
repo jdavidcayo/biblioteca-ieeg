@@ -24,7 +24,7 @@ Route::middleware([
             return view('welcome');
         })->name('indexVerified');
     });
-    Route::get('Inicio', [InicioController::class, 'inicio']);
-    Route::get('Manuales', [ManualesController::class,'manuales']);
-    Route::get('Folletos', [FolletosContoller::class,'folletos']);
+    Route::get('/inicio', [InicioController::class, 'inicio']);
+    Route::get('/manuales', [ManualesController::class,'manuales']);
+    Route::get('/folletos', [FolletosContoller::class,'folletos']);
     Route::get('/formatos', [FormatoController::class, 'index'])->name('formatos.index');
